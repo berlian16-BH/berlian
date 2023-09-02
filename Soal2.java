@@ -1,8 +1,16 @@
-public class Soal2 {
+package soal2;
+
+public class Soal2{
+    public static final double CM_PERINCH =2.54;
     public static void main(String[] args) {
-        int i = 42;
-        String result = (i < 10) ? "life" : (i > 50) ? "universe" : "everything";
-        System.out.println(result); 
+        final double CM_PER_INCH = 2.54;
+        double paperWidth;
+        paperWidth = 8.5;
+        double paperHeight = 11;
+        
+        double widthInCentimeters = paperWidth * CM_PER_INCH;
+        double heightInCentimeters = paperHeight * CM_PER_INCH;
+        
+        System.out.println("Paper size in centimeters: " + widthInCentimeters + " by " + heightInCentimeters);
     }
 }
-
